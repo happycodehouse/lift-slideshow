@@ -4,8 +4,6 @@
 @use "base/reset" as *;
 @use "base/container" as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 :root {
     --initial-clip-path: inset(10%);
 }
@@ -121,7 +119,11 @@
             order: 2;
             flex: 1;             // 남은 공간 전부 차지
             height: 1px;
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        h2,a {
+            font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
         h2 {
@@ -129,9 +131,8 @@
             flex-shrink: 0;
             position: relative;
             white-space: nowrap;
-            font-family: "Lobster Two", sans-serif;
-            @include fontSize(48, 96);
-            font-weight: 400;
+            @include fontSize(16, 32);
+            font-weight: 500;
         }
 
         a {
@@ -139,6 +140,7 @@
             flex-shrink: 0;
             position: relative;
             text-align: right;
+            @include fontSize(10, 20);
             line-height: 1;
 
             &:hover {
@@ -188,6 +190,7 @@
 
     span {
         margin: 0 4px;
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         color: $pointColor;
     }
 }
