@@ -41,8 +41,8 @@ function initSlideshow(el, {onUpdateCurrent, ctrls} = {}) {
 
     const config = {
         clipPath: {
-            initial: "inset(9%)",
-            final:   "inset(7%)",
+            initial: "inset(9% round 20px)",
+            final:   "inset(7% round 20px)",
             hover:   "inset(0%)",
         }
     };
