@@ -156,6 +156,9 @@
 
             .inner {
                 flex-direction: column;
+                justify-content: flex-end;
+                height: 100vh;
+                padding: var(--page-padding);
             }
 
             a {
